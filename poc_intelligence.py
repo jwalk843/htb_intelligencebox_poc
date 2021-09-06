@@ -48,7 +48,7 @@ while True:
             # save the file
             open(pdf, "wb").write(r.content)
         # after ### of pdfs are downloaded, kill while loop
-        if len(os.listdir(".")) >= 51:
+        if len(os.listdir(".")) >= 51:  ################################## YOU MAY WANT TO EDIT THIS TO CHANGE # OF FILES YOU DOWNLOAD.
             print("\nI have enough PDF's downloaded!\n")
             users = []
             for x in os.listdir():
